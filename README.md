@@ -12,11 +12,6 @@ and to send visitors to the App Store.
 5. Google Search Console: add `get.stillkeep.app` (or a Domain property for `stillkeep.app`, which covers every subdomain),
    then use URL Inspection on `https://get.stillkeep.app/` and click Request indexing.
 
-## Before going live
-
-- **Font:** add `YoungSerif-Regular.woff2` next to `index.html` (steps below). The font is self-hosted so the page
-  sends no visitor data to Google and needs no cookie or consent banner.
-
 ## Link it up (this is what gets it indexed)
 
 - On stillkeep.app, point your main "Get the app" / download buttons to `https://get.stillkeep.app/`.
@@ -43,13 +38,3 @@ and to send visitors to the App Store.
 The page sets no cookies, runs no analytics and loads nothing from third-party servers. The only outbound
 links are to the App Store, stillkeep.app and the Stillkeep legal pages. Downloads are measured through the
 App Store campaign link.
-
-## Adding the font
-
-1. Download "Young Serif" from https://fonts.google.com/specimen/Young+Serif (Get font > Download all).
-2. Convert `YoungSerif-Regular.ttf` to `.woff2`, e.g. with https://cloudconvert.com/ttf-to-woff2, or
-   `pip install fonttools brotli && fonttools ttLib.woff2 compress YoungSerif-Regular.ttf`.
-3. Upload `YoungSerif-Regular.woff2` and the `OFL.txt` licence alongside `index.html`.
-
-The font is licensed under the SIL Open Font License, which allows self-hosting. Until it's uploaded,
-headings use Georgia and the page still works.
